@@ -213,3 +213,23 @@ footer {
     padding-top: 20px;
     margin-left: 22%;
 }
+
+@media only screen and (max-width: 1343px) {
+    .general-info-block {
+        width: 30%;
+    }
+    .product-item {
+        width: 26%;
+        margin-right: 85px;
+    }
+    .checkbox {
+        padding-bottom: 10px;
+    }
+    footer {
+        height: 90px;
+    }
+    .footer-info {
+        padding-top: 10px;
+        margin-left: 24%;
+    }
+}
