@@ -1,0 +1,215 @@
+@font-face {
+    font-family: FiraSans;
+    src: url (fonts/FiraSans/FiraSans-Regular.ttf);
+}
+@font-face {
+    font-family: FontAwesome;
+    src: url (fonts/FontAwesome/fontawesome-webfont.ttf);
+}
+* {
+    font-family: FiraSans;
+    font-size: 16pt;
+}
+body {
+    margin: 0;
+    min-width: 1080px;
+}
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #8cc34b;
+    box-shadow: 0px 0px 12px 2px black;
+}
+.general-info-block {
+    float: left;
+    width: 25%;
+    margin-left: 140px;
+}
+.name {
+    font-weight: bold;
+    font-size: 18pt;
+    color: white;
+    margin-bottom: 0px;
+}
+.email {
+    font-size: 14pt;
+    margin: 0;
+    color: white;
+}
+.social-networks-block {
+    float: right;
+    width: 25%;
+}
+.social-icon img {
+    width: 12%;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: -webkit-baseline-middle;
+    margin-top: 30px;
+    margin-right: 16px;
+    opacity: 0.5;
+}
+.social-icon img:hover {
+    opacity: 1;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+h1 {
+    font-size: 32pt;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+span {
+    color: grey;
+    font-size: 14pt;
+    display: block;
+    text-align: center;
+}
+.left-side-column {
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+}
+.left-side-column img, .right-side-column img {
+    float: left;
+    margin-top: 40px;
+}
+h4 {
+    float: left;
+    margin: 40px 0 0 20px;
+}
+.description {
+    width: 56%;
+    float: left;
+    color: grey;
+    font-size: 13pt;
+    font-family: FontAwesome;
+    margin-top: 6px;
+    margin-left: 20px;
+}
+.description a {
+    color: blue;
+    font-size: 14pt;
+}
+.right-side-column {
+    float: right;
+    width: 40%;
+    margin-right: 10%;
+}
+.catalogue {
+    background-image: url(gplaypattern.PNG);
+    padding-top: 2px;
+    padding-bottom: 90px;
+    margin-top: 60px;
+}
+.products {
+    margin: 2% 10%;
+}
+.product-item {
+    float: left;
+    width: 28%;
+    margin-right: 86px;
+    box-shadow: 0px 0px 2px 1px;
+}
+.product-item img {
+    width: 100%;
+    height: 170px;
+}
+.product-item:nth-child(3), .product-item:nth-child(6) {
+    margin-right: 0;
+    margin-bottom: 2%;
+}
+.product-block {
+    background-color: white;
+    margin-top: -6px;
+    width: 100%;
+}
+.product-block a {
+    font-weight: bold;
+    padding: 25px 20px 0 20px;
+    border-top: 4px solid hsla(87, 18%, 44%, 0);
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.product-block a:hover {
+    color: #8cc34b;
+    cursor: pointer;
+    border-top: 4px solid #8cc34b;
+}
+.product-description {
+    font-size: 14pt;
+    font-family: FontAwesome;
+    margin: 6px 20px;
+    color: grey;
+}
+.product-block img {
+    margin: 0 0 0 20px;
+    vertical-align: -webkit-baseline-middle;
+    width: 6%;
+    height: 6%;
+}
+.time-marker {
+    font-size: 11pt;
+    display: inline;
+    vertical-align: -webkit-baseline-middle;
+}
+input {
+    -webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid black;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+    margin: 20px 4px 0px 20px;
+}
+input:checked {
+    background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+input:checked::after {
+    content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: black;
+}
+.checked {
+    font-size: 13pt;
+    vertical-align: text-top;
+    display: inline;
+}
+.checkbox {
+    background-color: #f6f7f2;
+    margin-top: 8px;
+    padding-bottom: 8px;
+}
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #212121;
+}
+.footer-info {
+    color: #656565;
+    width: 50%;
+    padding-top: 20px;
+    margin-left: 22%;
+}
