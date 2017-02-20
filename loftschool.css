@@ -6,13 +6,42 @@
     font-family: FontAwesome;
     src: url (fonts/FontAwesome/fontawesome-webfont.ttf);
 }
-* { 
+* {
     font-family: FiraSans;
     font-size: 16pt;
 }
 body {
     margin: 0;
     min-width: 1080px;
+}
+#popup {
+    display: none;
+    width: 60%;
+    height: 400px;
+    background-color: crimson;
+    position: fixed;
+    left: 20%;
+    top: 25%;
+    z-index: 2;
+    border-radius: 50px;
+}
+#popup-text {
+    color: black;
+    font-size: 90pt;
+    margin-top: 100px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center; 
+}
+#close-block {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: -8px;
+  width: 16px;
+  height: 16px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAElBMVEXqAAD8oaH/AAD/ra3/vr7///91+I/7AAAAQklEQVR42oXPwQoAIAgD0JXu/385FfTQgnYweKAp9pUXmE+swAFWAG8owQBTqjQQ8SQOcAdRQVtkqHy7dDFd/X/tAVqqAopyUfkOAAAAAElFTkSuQmCC);
+  cursor: pointer;
 }
 .wrapper {
     position: relative;
@@ -117,10 +146,22 @@ h4 {
     margin: 2% 10%;
 }
 .product-item {
+    position: relative;
     float: left;
     width: 28%;
     margin-right: 86px;
     box-shadow: 0px 0px 2px 1px;
+}
+.cover-block {
+    content: " ";
+    z-index: 10;
+    display: none;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(139, 195, 74, 0.2);
 }
 .product-item img {
     width: 100%;
@@ -213,7 +254,6 @@ footer {
     padding-top: 20px;
     margin-left: 22%;
 }
-
 @media only screen and (max-width: 1343px) {
     .general-info-block {
         width: 30%;
@@ -233,3 +273,4 @@ footer {
         margin-left: 24%;
     }
 }
+

@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <title>Loftschool</title>
     <link rel="stylesheet" href="loftschool.css"/>
+    <!--[if IE]>
+	    <link rel="stylesheet" type="text/css" href="ie.css" />
+    <![endif]-->
     <script src="loftschool.js"></script>
 </head>
 <body>
+    <div id = "popup">
+        <span id="popup-text">try it yourself!</span>
+        <span id='close-block' onclick="closeFunc()"></span>
+    </div>
     <div class="wrapper">
         <header class="clearfix">
             <div class="general-info-block">
@@ -28,7 +36,7 @@
                     <h4>Немного обо мне</h4>
                     <p class="description">Я живу в Санкт-Петербурге(Россия). Мне 26 лет. Высшее образоване - 
                         закончил НИУ ИТМО. Опыт разработки - 1 год. Уже закончил курсы в
-                        Академии программирования, гдк неплохо научился верстать. Пoка могу
+                        Академии программирования, гдe неплохо научился верстать. Пoка могу
                         похвастаться только одним сайтом: <a href="#">www.hello.com</a></p>
                     </p>
                 </div>
@@ -43,8 +51,9 @@
             <div class="catalogue clearfix">
                 <h1>Курсы на LoftBlog</h1>
                 <span>которые мне помогут в выполнении этого задания</span>
-                <div class="products clearfix">
+                <div class="products clearfix">                    
                     <div class="product-item">
+                        <div class="cover-block"></div>
                         <img src="js.PNG"/>
                         <div class="product-block">
                             <a href="#">Основы Java Script</a>
@@ -54,11 +63,12 @@
                             <img src="clock-icon.png"/>
                             <span class="time-marker">24 урока (6 часов 46 минут)</span><br>
                             <div class="checkbox">
-                                <input type="checkbox" value="seen" name="seen"/><span class="checked">Посмотрел</span>
+                                <input type="checkbox" value="seen" name="seen" onclick="hide(this)"/><span class="checked">Посмотрел</span>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
                     <div class="product-item">
+                        <div class="cover-block"></div>
                         <img src="jquery.PNG"/>
                         <div class="product-block">
                             <a href="#">Основы JQERY</a>
@@ -68,11 +78,12 @@
                             <img src="clock-icon.png"/>
                             <span class="time-marker">11 уроков (2 часа 6 минут)</span><br>
                             <div class="checkbox">
-                                <input type="checkbox" value="seen" name="seen"/><span class="checked">Посмотрел</span>
+                                <input type="checkbox" value="seen" name="seen" onclick="hide(this)"/><span class="checked">Посмотрел</span>
                             </div>
                         </div>
                     </div>
                     <div class="product-item">
+                        <div class="cover-block"></div>
                         <img src="base.PNG"/>
                         <div class="product-block">
                             <a href="#">Базовые элементы страницы</a>
@@ -82,11 +93,12 @@
                             <img src="clock-icon.png"/>
                             <span class="time-marker">9 уроков (2 часа 7 минут)</span><br>
                             <div class="checkbox">
-                                <input type="checkbox" value="seen" name="seen"/><span class="checked">Посмотрел</span>
+                                <input type="checkbox" value="seen" name="seen" onclick="hide(this)"/><span class="checked">Посмотрел</span>
                             </div>
                         </div>
                     </div>
                     <div class="product-item">
+                        <div class="cover-block"></div>
                         <img src="adapt.PNG"/>
                         <div class="product-block">
                             <a href="#">Создание адаптивных сайтов</a>
@@ -95,11 +107,12 @@
                             <img src="clock-icon.png"/>
                             <span class="time-marker">7 уроков (2 часа 11 минут)</span><br>
                             <div class="checkbox">
-                                <input type="checkbox" value="seen" name="seen"/><span class="checked">Посмотрел</span>
+                                <input type="checkbox" value="seen" name="seen" onclick="hide(this)"/><span class="checked">Посмотрел</span>
                             </div>
                         </div>
                     </div>
                     <div class="product-item">
+                        <div class="cover-block"></div>
                         <img src="button.PNG"/>
                         <div class="product-block">
                             <a href="#">Верстка адаптивной css галереи</a>
@@ -109,11 +122,12 @@
                             <img src="clock-icon.png"/>
                             <span class="time-marker">6 уроков (1 час 9 минут)</span><br>
                             <div class="checkbox">
-                                <input type="checkbox" value="seen" name="seen"/><span class="checked">Посмотрел</span>
+                                <input type="checkbox" value="seen" name="seen" onclick="hide(this)"/><span class="checked">Посмотрел</span>
                             </div>
                         </div>
                     </div>
                     <div class="product-item">
+                        <div class="cover-block"></div>
                         <img src="css.PNG"/>
                         <div class="product-block">
                             <a href="#">Верстка адаптивной css галереи</a>
@@ -122,7 +136,7 @@
                             <img src="clock-icon.png"/>
                             <span class="time-marker">4 уроков (50 минут)</span><br>
                             <div class="checkbox">
-                                <input type="checkbox" value="seen" name="seen"/><span class="checked">Посмотрел</span>
+                                <input type="checkbox" value="seen" name="seen" onclick="hide(this)"/><span class="checked">Посмотрел</span>
                             </div>
                         </div>
                     </div>
